@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" fill="#0D0C0F"/>
+  <rect x="4" y="4" width="56" height="56" fill="none" stroke="#C7A469" stroke-width="1.5"/>
+  <rect x="9" y="9" width="46" height="46" fill="none" stroke="#C7A469" stroke-width=".6" opacity=".45"/>
+  <text x="32" y="44" text-anchor="middle" font-family="Tajawal, Segoe UI, sans-serif" font-size="34" font-weight="700" fill="#C7A469">ز</text>
+</svg>
