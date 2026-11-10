@@ -2,6 +2,9 @@
 
 موقع تعريفي (صفحة واحدة) مبني من ملف البروفايل `زاد الرقمي_العرض.pptx` — نفس المحتوى، نفس الألوان، وبنفس نبرة العرض.
 
+**الموقع منشور على GitHub Pages:** <https://ashrafnsali-bit.github.io/zad-alraqmi/>
+**المستودع:** <https://github.com/ashrafnsali-bit/zad-alraqmi>
+
 ---
 
 ## التشغيل محليًا
@@ -118,13 +121,26 @@ ffmpeg -i input.mp4 -map_metadata -1 \
 
 ## النشر
 
-الموقع ثابت (Static) — ارفع محتويات مجلد `site` كما هي إلى:
+الموقع منشور عبر **GitHub Pages** من الفرع `main` (جذر المستودع):
+
+- **الموقع:** <https://ashrafnsali-bit.github.io/zad-alraqmi/>
+- **المستودع:** <https://github.com/ashrafnsali-bit/zad-alraqmi>
+
+أي `git push` إلى `main` يحدّث الموقع تلقائيًا خلال دقيقة:
+
+```bash
+git add -A
+git commit -m "وصف التعديل"
+git push
+```
+
+للنشر على منصات أخرى (Netlify / Vercel / cPanel) ارفع محتويات المجلد كما هي:
 
 - **Netlify / Vercel:** اسحب المجلد في لوحة الموقع.
-- **GitHub Pages:** ارفع الملفات ثم فعّل Pages.
+- **GitHub Pages:** مفعّل حاليًا (فرع `main`، مجلد الجذر).
 - **استضافة عادية (cPanel):** ارفع داخل `public_html`.
 
-بعد النشر، حدّث رابط الصورة في وسوم `og:` داخل `index.html` إلى الرابط النهائي، وأضف الدومين في `sitemap.xml` إن رغبت.
+عند ربط دومين خاص في GitHub Pages: Settings → Pages → Custom domain، ثم أضف ملف `CNAME` يحتوي اسم الدومين في جذر المستودع.
 
 ---
 
